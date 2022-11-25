@@ -1,0 +1,367 @@
+@import "variables";
+@import "mixins";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+#header{ width: 100%;
+    background-color: #fff;
+    position:fixed;
+   
+   
+
+   
+    #top{ 
+        width: 84%;
+        margin: 0 auto;
+       display: flex;
+       justify-content: space-between;
+       height: 110px;
+       align-items: center;
+       
+     
+   
+       
+       .left{
+        a{
+            font-size: 38px;
+            letter-spacing: 1px;
+            color: #000;
+        }
+       }
+       .right{ width: 20%;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 35px;
+        
+        @include mobile{
+            display: none;
+        }
+        @include tablet{
+            display: none;
+        }
+        
+        a{
+            color: #000;
+            &:hover{
+                border-bottom: 1px solid #000;
+            }
+        }
+        
+       }
+    }
+}
+#main{
+    #top1{ padding-top: 100px;
+        .container{
+            color: #fff;
+            height: 60px;
+            background-color: rgb(54, 20, 20);
+            display: flex;
+            justify-content: center;
+            column-gap: 15px;
+            align-items: center;
+            b{
+                color: rgb(174, 6, 6);
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+    #top2{ 
+        width: 100%;
+        height: 100vh;
+        background-color: #451314;
+        .container{
+            width: 84%;
+            display: flex;
+            column-gap: 105px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+         
+               
+            }
+            
+            .image{
+               img{
+                width: 600px;
+                height: 100vh;
+
+               } 
+            }
+            .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+               line-height: 55px;
+                text-align: left;
+                color: #fff;
+                
+               
+                p{
+                    font-size: 55px;
+                  
+                }
+                h5{
+                    font-size: 20px;
+                   
+                }
+                form{ padding-top: 15px;
+                    
+                   
+                    input{
+                       background-color: #fff; 
+                       cursor: pointer;
+                       border-color: #fff;
+                       font-size: 15px;
+                       padding: 10 20px;
+                     
+                       &:hover{
+                        transition: calc(0.3s);
+                        background-color: rgb(218, 214, 214);
+                        border-color:  rgb(218, 214, 214);
+                    }
+                      
+                    } 
+                }
+
+
+            }
+        }
+    }
+    #top3{
+        .container{ width:84% ;
+            height: 768px;
+            align-items:center ;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .left{ line-height: 55px;
+h6{
+font-size: 38px;
+}
+p{
+    font-size: 18px;
+}
+form{ padding-top: 15px;
+                   
+    input{
+       background-color: #000; 
+       cursor: pointer;
+       color: #fff;
+       border-color: #000;
+       font-size: 15px;
+       padding: 13 26px;
+       &:hover{
+        transition: calc(0.3s);
+        background-color: rgb(54, 54, 54);
+        border-color:  #000;
+    }
+      
+    } 
+}
+
+
+            }
+            .right{ display: flex;
+                column-gap: 7px;
+                padding-left: 15px;
+               
+                .card{
+                   
+                    img{
+                        width: 264px;
+                        height: 512px;
+                    }
+                }
+
+            }
+        }
+    }
+    #top4{
+        .container{
+          
+           .image{
+            img{ width: 100%;
+                 height: 600px;
+          
+      
+        }
+           } 
+        .text{ position: relative;
+            bottom: 400px;
+            text-align: center;
+            font-size: 35px;
+            font-style: italic;
+color: #fff;
+           
+        }
+        
+        }
+      
+    }
+    #top5{
+        .container{ width: 84%;
+            height: 100vh;
+            align-items: center;
+            margin: 0 auto;
+            display: flex;
+            column-gap: 25px;
+            justify-content: center;
+            .card{
+                .image{
+                    img{
+                         width: 600px;
+                    height: 442px;
+                    }
+                   
+                }
+                .Info{ line-height: 55px;
+                    padding-top: 25px;
+                    span{
+                        font-size: 32px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                    
+
+                    form{ padding-top: 15px;
+                   
+                        input{
+                           background-color: #000; 
+                           cursor: pointer;
+                           color: #fff;
+                           border-color: #000;
+                           font-size: 15px;
+                           padding: 13 26px;
+                           &:hover{
+                            transition: calc(0.3s);
+                            background-color: rgb(54, 54, 54);
+                            border-color:  #000;
+                        }
+                          
+                        } 
+                    }
+
+                }
+            }
+        }
+    }
+    #top6{ 
+        .container{
+            width: 100%;
+            height: 100vh;
+           
+            padding-top: 55px;
+            .image{
+                img{
+                    width: 100%;
+                  
+                }
+            }
+            .text{ width: 84%;
+                margin: 0 auto;
+                position: relative;
+                z-index:auto;
+            color: #fff;
+              bottom: 580px;
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+              z-index: 1;
+              
+              p{
+                font-size: 35px;
+              }
+              h2{
+                font-size: 75px;
+                max-width: 700px;
+               word-spacing: 3px;
+               font-style: italic;
+              }
+              .first{
+                padding-top: 25px;
+                input{
+                    width: 380px;
+                    height: 50px;
+                    
+                }
+              }
+              .second{
+                padding-top: 25px;
+                input{
+                    background-color: #000;
+                    color: #fff;
+                    padding: 15px 25px;
+                    &:hover{
+                        transition: calc(0.3s);
+                        background-color: rgb(54, 54, 54);
+                        border-color:  rgb(54, 54, 54);
+                        cursor: pointer;
+                    }
+                }
+              }
+                
+            }
+        }
+    }
+    
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+#main #top2 .container {
+    width: 1000%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#main #top2 .container .text{
+   p{
+    font-size: 30px;
+   }
+   form{
+    input{
+        padding: 5px 10px;
+    }
+   }
+}
+
+#main #top3 .container  {
+    display: flex;
+    flex-direction: column;
+    padding-top: 155px;
+  
+
+}
+#main #top3 .container .right{
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    row-gap: 25px;
+}
+#main #top4{
+    padding-top: 1250px;
+}
+#main #top5{
+    padding-top: 50px;
+}
+#main #top5 .container{
+   
+ width: 80%;
+ display: flex;
+ row-gap: 25px;
+ flex-direction: column;
+}
+
+    
+ }
